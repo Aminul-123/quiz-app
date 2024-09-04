@@ -1,4 +1,4 @@
-import { createContext, useContext, useReducer } from "react";
+import { createContext, useContext, useEffect, useReducer } from "react";
 
 const QuizContext = createContext()
 
@@ -99,7 +99,7 @@ function ContextProvider ({children}) {
 
         return <QuizContext.Provider 
         value={{
-            questions, status, index, answer, points, highscore, secondsRemaining, numQuestion, maxPossiblePoints
+            questions, status, index, answer, points, highscore, secondsRemaining, numQuestion, maxPossiblePoints, dispatch
         }}
         >
             {children}

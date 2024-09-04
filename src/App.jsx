@@ -14,7 +14,7 @@ import { useQuiz } from "./contexts/QuizContext.jsx";
 
 export default function App() {
 
-  const { questions, status, index, answer, points, highscore, secondsRemaining, numQuestion, maxPossiblePoints} = useQuiz()
+  const { questions, status, index, answer, points, highscore, secondsRemaining, numQuestion, maxPossiblePoints, dispatch} = useQuiz()
   
   return (
     <>

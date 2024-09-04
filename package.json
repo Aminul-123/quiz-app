@@ -8,9 +8,10 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "server" : "json-server --watch src/question.json --port 8000"
+    "server": "json-server --watch src/question.json --port 8000"
   },
   "dependencies": {
+    "create": "^0.0.2",
     "json-server": "^1.0.0-beta.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -24,6 +25,6 @@
     "eslint-plugin-react": "^7.34.3",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
-    "vite": "^5.3.4"
+    "vite": "^5.3.5"
   }
 }
