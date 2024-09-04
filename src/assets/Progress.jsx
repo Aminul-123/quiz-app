@@ -1,6 +1,8 @@
 import React from 'react'
+import { useQuiz } from '../contexts/QuizContext'
 
-function Progress({index, numQuestion, points, maxPossiblePoints, answer}) {
+function Progress() {
+  const {index, numQuestion, points, maxPossiblePoints, answer} = useQuiz();
   return (
    <header className="progress">
     {/* if answer is not null , then answer will convert into boolean value 1, 
